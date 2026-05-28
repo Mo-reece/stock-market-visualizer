@@ -13,6 +13,8 @@ An interactive financial analysis tool that pulls two years of daily stock data 
 Five major tech tickers — AAPL, TSLA, MSFT, GOOGL, AMZN — across a 2-year daily window. The notebook handles data fetching, caching, feature engineering, and chart generation in a single pass. Change the ticker list in one cell and re-run; everything else adapts automatically.
 
 **Tickers:** AAPL · TSLA · MSFT · GOOGL · AMZN
+
+**Live demo:** [https://mo-reece.github.io/stock-market-visualizer/](https://mo-reece.github.io/stock-market-visualizer/)
 **Period:** 2 years of daily OHLCV data
 **Data source:** Yahoo Finance via `yfinance`
 

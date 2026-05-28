@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stock Market Trend Visualizer</title>
+  <meta name="description" content="Interactive Plotly stock-market dashboards for AAPL, TSLA, MSFT, GOOGL, and AMZN.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fa;
+      --card: #ffffff;
+      --text: #17202a;
+      --muted: #5f6b7a;
+      --accent: #0f766e;
+      --border: #d9dee7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      padding: 48px 24px 24px;
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 5vw, 4rem);
+      line-height: 1;
+      letter-spacing: 0;
+    }
+    p {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 16px 24px 56px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+    }
+    a.card {
+      display: block;
+      min-height: 112px;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--card);
+      color: inherit;
+      text-decoration: none;
+      transition: border-color 160ms ease, transform 160ms ease;
+    }
+    a.card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--accent);
+      font-size: 1rem;
+    }
+    .card span {
+      color: var(--muted);
+      font-size: .94rem;
+    }
+    footer {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 24px 40px;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Stock Market Trend Visualizer</h1>
+    <p>Interactive Plotly dashboards for major technology stocks, including candlesticks, moving averages, normalized comparisons, returns, volatility, correlation, volume, and summary statistics.</p>
+  </header>
+  <main>
+    <section class="grid" aria-label="Interactive stock visualizations">
+      <a class="card" href="01_candlestick_AAPL.html"><strong>Candlestick</strong><span>AAPL OHLC candlestick chart with interactive range controls.</span></a>
+      <a class="card" href="02_moving_averages_AAPL.html"><strong>Moving Averages</strong><span>Trend-following view with short and long moving averages.</span></a>
+      <a class="card" href="03_normalized_comparison.html"><strong>Normalized Comparison</strong><span>Indexed performance comparison across selected tickers.</span></a>
+      <a class="card" href="04_returns_distribution.html"><strong>Returns Distribution</strong><span>Daily returns distribution for risk and volatility inspection.</span></a>
+      <a class="card" href="05_rolling_volatility.html"><strong>Rolling Volatility</strong><span>Rolling volatility analysis across the stock universe.</span></a>
+      <a class="card" href="06_correlation_heatmap.html"><strong>Correlation Heatmap</strong><span>Cross-ticker return correlation matrix.</span></a>
+      <a class="card" href="07_volume_analysis.html"><strong>Volume Analysis</strong><span>Trading volume trends and activity shifts.</span></a>
+      <a class="card" href="08_statistics_dashboard.html"><strong>Statistics Dashboard</strong><span>Summary metrics and comparative performance indicators.</span></a>
+    </section>
+  </main>
+  <footer>
+    Built by Maurice Leonard Okurut. Source: <a href="https://github.com/Mo-reece/stock-market-visualizer">GitHub repository</a>.
+  </footer>
+</body>
+</html>
